@@ -1,0 +1,57 @@
+.text-black-1 {
+  color: #1d2939;
+}
+.text-black-2 {
+  color: #344054;
+}
+.text-black-3 {
+  color: #667085;
+}
+.menuTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #344054;
+}
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d2939;
+}
+.section-subTitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #667085;
+}
+.chart-data {
+  font-size: 12px;
+  font-weight: 400;
+  color: #344054;
+}
+
+.collapse-title,
+.collapse,
+.collapse input {
+  min-height: 0px !important;
+}
+.collapse-arrow > .collapse-title:after {
+  top: 50% !important;
+  box-shadow: 1.5px 1.5px;
+  color: #344054;
+}
+.btn {
+  min-height: auto !important;
+}
+.gaugeChart canvas {
+  width: 84% !important;
+  min-width: 328px !important;
+  margin: auto;
+  max-height: 220px;
+}
+tr {
+  border-bottom: none !important;
+  border-top: 1px solid #f2f4f7 !important;
+}
+
+.calShadow {
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
