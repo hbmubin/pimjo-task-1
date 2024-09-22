@@ -74,7 +74,9 @@ const GaugeChart = () => {
         plugins={[roundedCornersPlugin]}
       />
       <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-        <div className="font-semibold text-[36px] text-black-1">75.55%</div>
+        <div className="font-semibold xl:text-[36px] text-2xl text-black-1">
+          75.55%
+        </div>
         <div className="">
           <span className="text-sm font-medium bg-[#ECFDF3] text-[#027A48] py-1 inline-block  px-3 rounded-full mt-2">
             +10%

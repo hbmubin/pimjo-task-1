@@ -8,10 +8,10 @@ import GaugeChart from "./GaugeChart";
 import BarChart from "./BarChart";
 const EcommerceTop = () => {
   return (
-    <div className="flex w-full gap-6">
-      <div className="flex flex-col gap-6 w-[56%]">
-        <div className="grid grid-cols-2 gap-6">
-          <div className="bg-white p-6 rounded-2xl border-[#E4E7EC] border-[1px]  min-w-[254px]">
+    <div className="flex xl:flex-row flex-col w-full gap-6">
+      <div className="flex flex-col gap-6 xl:w-[56%]">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
+          <div className="bg-white p-6 rounded-2xl border-[#E4E7EC] border-[1px] ">
             <div>
               <img className="p-3 rounded-xl bg-[#F2F4F7]" src={users} />
             </div>
@@ -30,7 +30,7 @@ const EcommerceTop = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white p-6 rounded-2xl border-[#E4E7EC] border-[1px]  min-w-[254px]">
+          <div className="bg-white p-6 rounded-2xl border-[#E4E7EC] border-[1px]  ">
             <div>
               <img className="p-3 rounded-xl bg-[#F2F4F7]" src={cube} />
             </div>
@@ -48,7 +48,7 @@ const EcommerceTop = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white p-6 rounded-2xl border-[#E4E7EC] border-[1px]">
+        <div className="bg-white p-6 rounded-2xl border-[#E4E7EC] border-[1px] ">
           <div className="flex items-start justify-between mb-6">
             <div>
               <h2 className="section-title mb-1">Monthly Sales</h2>
@@ -57,13 +57,15 @@ const EcommerceTop = () => {
               <img className="max-w-6" src={menu} />
             </div>
           </div>
-          <BarChart></BarChart>
+          <div className="barChart">
+            <BarChart></BarChart>
+          </div>
         </div>
       </div>
-      <div className="bg-white rounded-2xl overflow-hidden border-[#E4E7EC] border-[1px] min-w-[400px] w-[44%]">
+      <div className="bg-white rounded-2xl overflow-hidden border-[#E4E7EC] border-[1px]  xl:w-[44%] ">
         <div className=" bg-[#F2F4F7] w-full  h-full">
           <div className="w-full bg-white rounded-b-2xl p-6">
-            <div className="flex items-start justify-between mb-[36px]">
+            <div className="flex items-start justify-between xl:mb-[36px]">
               <div>
                 <h2 className="section-title mb-1">Monthly Target</h2>
                 <p className="section-subTitle">
@@ -76,10 +78,10 @@ const EcommerceTop = () => {
             </div>
             <div>
               <GaugeChart></GaugeChart>
-              <div className="pb-[13px]  pt-6">
+              <div className="xl:pb-[13px]  xl:pt-6">
                 <p className="section-subTitle text-center">
                   You earn $3287 today, its higher than last month.
-                  <br /> Keep up your good work!
+                  <br className="xl:block hidden" /> Keep up your good work!
                 </p>
               </div>
             </div>

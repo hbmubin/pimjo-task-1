@@ -7,7 +7,7 @@ import "./defaultStyle.css";
 
 const OrdersTable = () => {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto xl:w-auto w-full">
       <table className="table">
         <thead>
           <tr>
@@ -20,9 +20,9 @@ const OrdersTable = () => {
         <tbody>
           <tr>
             <th>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 flex-col md:flex-row ">
                 <div>
-                  <img src={product1} />
+                  <img className="" src={product1} />
                 </div>
                 <div>
                   <h2 className="text-sm font-medium text-text-black-1">
@@ -42,7 +42,7 @@ const OrdersTable = () => {
           </tr>
           <tr>
             <th>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3  flex-col md:flex-row ">
                 <div>
                   <img src={product2} />
                 </div>
@@ -64,7 +64,7 @@ const OrdersTable = () => {
           </tr>
           <tr>
             <th>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3  flex-col md:flex-row ">
                 <div>
                   <img src={product3} />
                 </div>
@@ -86,7 +86,7 @@ const OrdersTable = () => {
           </tr>
           <tr>
             <th>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3  flex-col md:flex-row ">
                 <div>
                   <img src={product4} />
                 </div>
@@ -108,7 +108,7 @@ const OrdersTable = () => {
           </tr>
           <tr>
             <th>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3  flex-col md:flex-row ">
                 <div>
                   <img src={product5} />
                 </div>

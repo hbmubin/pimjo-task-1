@@ -7,8 +7,8 @@ import fr from "./../assets/FR.svg";
 import OrdersTable from "./OrdersTable";
 const EcoBottom = () => {
   return (
-    <div className="w-full flex gap-6 mt-6">
-      <div className="w-[37.47%]  bg-white rounded-2xl p-6 overflow-hidden border-[#E4E7EC] border-[1px] min-w-[413px]">
+    <div className="w-full flex flex-col xl:flex-row gap-6 mt-6 ">
+      <div className="xl:w-[37.47%]  w-full bg-white rounded-2xl p-6 overflow-hidden border-[#E4E7EC] border-[1px] ">
         <div className="flex items-start justify-between mb-6">
           <div>
             <h2 className="section-title mb-1">Customers Demographic</h2>
@@ -21,7 +21,7 @@ const EcoBottom = () => {
           </div>
         </div>
         <div className="bg-[#F9FAFB] rounded-2xl p-[25.5px] overflow-hidden border-[#E4E7EC] border-[1px]">
-          <img src={map} />
+          <img className="xl:w-auto w-[90vw]" src={map} />
         </div>
         <div className="mt-6">
           <div className="w-full flex items-center justify-between mb-5">
@@ -68,7 +68,7 @@ const EcoBottom = () => {
           </div>
         </div>
       </div>
-      <div className="w-[62.53%] p-6 h-min  bg-white rounded-2xl overflow-hidden border-[#E4E7EC] border-[1px] min-w-[665px]">
+      <div className="xl:w-[62.53%] p-6 w-full  bg-white rounded-2xl overflow-hidden border-[#E4E7EC] border-[1px] ">
         <div className="flex justify-between items-center">
           <div>
             <h2 className="section-title">Recent Orders</h2>
@@ -85,7 +85,7 @@ const EcoBottom = () => {
             </div>
           </div>
         </div>
-        <div className="mt-4">
+        <div className="mt-4 w-full">
           <OrdersTable></OrdersTable>
         </div>
       </div>

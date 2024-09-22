@@ -1,9 +1,10 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
 import "chart.js/auto";
 
 const AreaChart = () => {
   const chartRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 640);
 
   const data = {
     labels: [
@@ -20,7 +21,6 @@ const AreaChart = () => {
       "Nov",
       "Dec",
     ],
-    padding: "10px",
     datasets: [
       {
         label: "line 1",
@@ -193,8 +193,13 @@ const AreaChart = () => {
   }, [data]);
 
   return (
-    <div>
-      <Line ref={chartRef} data={data} options={options} height={72} />
+    <div className="areaChart xl:w-auto xl:h-auto w-full">
+      <Line
+        ref={chartRef}
+        data={data}
+        options={options}
+        height={isMobile ? undefined : 72}
+      />
     </div>
   );
 };

@@ -101,7 +101,7 @@ const BarChart = () => {
     },
   };
 
-  return <Bar data={data} options={options} width={800} height={300} />;
+  return <Bar data={data} options={options} height={100} />;
 };
 
 export default BarChart;
